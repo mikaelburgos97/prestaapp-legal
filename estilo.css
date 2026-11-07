@@ -1,0 +1,15 @@
+:root { --fondo: #F2F4F7; --tarjeta: #FFFFFF; --texto: #14181F; --suave: #4A5260; --primario: #1559B5; --borde: #DDE2E9; }
+@media (prefers-color-scheme: dark) { :root { --fondo: #0F1216; --tarjeta: #181C22; --texto: #E8EAED; --suave: #A6ADB8; --primario: #7FB0F5; --borde: #2A3038; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 17px/1.6 -apple-system, "SF Pro Text", Roboto, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.logo { width: 48px; height: 48px; border-radius: 12px; background: #1559B5; color: #fff; font-weight: 800; font-size: 26px; display: grid; place-items: center; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+p, li { color: var(--texto); }
+.suave { color: var(--suave); font-size: 15px; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 16px; padding: 20px; margin: 16px 0; }
+a { color: var(--primario); }
+nav a { margin-right: 16px; font-weight: 600; }
+footer { margin-top: 48px; font-size: 15px; color: var(--suave); }
